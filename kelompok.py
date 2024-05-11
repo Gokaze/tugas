@@ -16,7 +16,7 @@ with tab2:
     z=st.number_input('Masukkan nilai BE sample :')
     w=st.number_input('masukkan volume titrat dalam erlenmeyer :')
     r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :')
-    v=st.input(int('Nilai'))
+    v=st.number_input(int('nilai='))
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
 
 
