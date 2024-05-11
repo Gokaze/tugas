@@ -10,10 +10,14 @@ with tab1:
 
     
 with tab2:
-    st.header('kalkulator menghitung Molaritas ')
-    y=st.number_input('Masukkan masa padatan dari sampel yang telah dipilih dalam satuan mg:')
-    x=st.number_input('Masukkan bobot molekul sampel dalam satuan mmol/mL:')    
-    z=st.number_input('Masukkan volume dalam satuan mL')
+    st.header('kalkulator menghitung kadar %(b/v) ')
+    y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
+    x=st.number_input('Masukkan konsenstrasi titran yang digunakan :')    
+    z=st.number_input('Masukkan nilai BE sample :')
+    w=st.number_input('masukkan volume titrat dalam erlenmeyer :')
+    r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :')
+        st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
+
 
 
 
