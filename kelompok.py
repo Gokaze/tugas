@@ -27,7 +27,7 @@ with tab2:
      
     if tombol:
         jumlahmolaritas=y*x*z*r/w*0.1
-        st.success(f'Kadar (b/v) sampel adalah{jumlahmolaritas} %'value=0,00) 
+        st.success(f'Kadar (b/v) sampel adalah{jumlahmolaritas} %'value=0.00) 
 
 
 
