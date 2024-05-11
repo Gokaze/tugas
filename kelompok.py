@@ -15,7 +15,7 @@ with tab2:
     x=st.number_input('Masukkan konsenstrasi titran yang digunakan :')    
     z=st.number_input('Masukkan nilai BE sample :')
     w=st.number_input('masukkan volume titrat dalam erlenmeyer :')
-    r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :', value=0.0000)
+    r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :',min_value=0.0000)
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
     
 
