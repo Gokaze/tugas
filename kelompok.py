@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Menghitung Jumlah Molaritas dan PPM ')
+st.title('Menghitung Jumlah kadar ')
 
 tab1, tab2, tab3=st.tabs(['informasi tentang PPM','kalkulator menghitung Molaritas','kalkulator menghitung ppm dari Molaritas'])
 
