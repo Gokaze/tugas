@@ -11,7 +11,7 @@ with tab1:
     
 with tab2:
     st.header('kalkulator menghitung kadar %(b/v) ')
-    y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
+    y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :',value=0)
     x=st.number_input('Masukkan konsenstrasi titran yang digunakan :')    
     z=st.number_input('Masukkan nilai BE sample :')
     w=st.number_input('masukkan volume titrat dalam erlenmeyer :')
