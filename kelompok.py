@@ -12,12 +12,12 @@ with tab1:
 with tab2:
     st.header('kalkulator menghitung kadar %(b/v) ')
     y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
-    x=st.number_input('Masukkan konsenstrasi titran yang digunakan :')    
+    x=st.number_input('Masukkan konsenstrasi titran yang digunakan :', value=0,0000)    
     z=st.number_input('Masukkan nilai BE sample :')
     w=st.number_input('masukkan volume titrat dalam erlenmeyer :')
     r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :')
-    v=st.number_input(int('nilai='))
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
+    
 
 
 
@@ -27,7 +27,7 @@ with tab2:
      
     if tombol:
         jumlahmolaritas=y*x*z*r/w*0.1
-        st.success(f'Kadar (b/v) sampel adalah{jumlahmolaritas} %') 
+        st.success(f'Kadar (b/v) sampel adalah{jumlahmolaritas} %'value=0,00) 
 
 
 
