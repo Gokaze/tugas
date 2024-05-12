@@ -1,17 +1,17 @@
 import streamlit as st
 
-st.title('Menghitung Jumlah kadar ')
+st.title('Substanse Analyzer')
 
-tab1, tab2, tab3, tab4=st.tabs(['informasi tentang kadar','Mencari nilai Ar suatu atom','kalkulator menghitung kadar %(b/v)','kalkulator menghitung kadar %(b/b)'])
+tab1, tab2, tab3, tab4=st.tabs(['Penjelasan','Mencari Nilai Ar Suatu Unsur','Kalkulator Perhitungan Kadar %(b/v)','Kalkulator Perhitungan Kadar %(b/b)'])
 
 with tab1:
     st.header('')
     st.write('')
 
 with tab2:
-    st.header('Mencari nilai Ar dari suatu unsur')
-    atom=st.text_input('masukan simbol atom (cth: Pb)')
-    tombol=st.button('tampilkan nilai Ar')
+    st.header('Mencari Nilai Ar Suatu Unsur')
+    atom=st.text_input('Masukkan Simbol Unsur (cth: Pb)')
+    tombol=st.button('Tampilkan Nilai Ar')
 
     if atom == "H" :
         st.success ("1")
@@ -244,18 +244,18 @@ with tab2:
     elif atom == "Lr" :
         st.success ("262")
     else :
-        st.success ("Mohon memasukkan nama atom yang sesuai ")
+        st.success ("Mohon memasukkan simbol unsur yang sesuai ")
 
 
     
 with tab3:
-    st.header('kalkulator menghitung kadar %(b/v) dalam sampel')
-    y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :',value=0.0000)
-    x=st.number_input('Masukkan konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
-    z=st.number_input('Masukkan nilai BE sample :')
-    w=st.number_input('masukkan volume sampel (mL) :')
-    r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
-    st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
+    st.header('Kalkulator Perhitungan Kadar %(b/v) Dalam Sampel')
+    y=st.number_input('Masukkan volume titran yang digunakan untuk titrasi :',value=0.0000)
+    x=st.number_input('Masukkan konsentrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
+    z=st.number_input('Masukkan nilai BE sampel :')
+    w=st.number_input('Masukkan volume sampel (mL) :')
+    r=st.number_input('Masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
+    st.write('Bila tidak ada faktor pengali/pengenceran masukkan nilai=1')
     
 
 
@@ -266,23 +266,23 @@ with tab3:
      
     if tombol:
         jumlahkadar=y*x*z*r/w*0.1
-        st.success(f'Kadar (b/v) sampel adalah= {jumlahkadar}%') 
+        st.success(f'Kadar %(b/v) sampel= {jumlahkadar}%') 
 
 with tab4:
-    st.header('kalkulator menghitung kadar %(b/b) dalam sampel')
-    a=st.number_input('volume titran yang digunakan selama titrasi :')
-    b=st.number_input('konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
-    c=st.number_input('nilai BE sample :')
-    d=st.number_input('masukkan bobot sampel (mg) :')
-    e=st.number_input('faktor pengali/pengenceran yang digunakan :',min_value=1)
-    st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
+    st.header('kalkulator Perhitungan Kadar %(b/b) Dalam Sampel')
+    a=st.number_input('Masukkan volume titran yang digunakan untuk titrasi :')
+    b=st.number_input('Masukkan konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
+    c=st.number_input('Masukkan nilai BE sampel :')
+    d=st.number_input('Masukkan bobot sampel (mg) :')
+    e=st.number_input('Masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
+    st.write('Bila tidak ada faktor pengali/pengenceran masukkan nilai=1')
 
 
-    tombol = st.button('Hitung kadar %(b/b)')
+    tombol = st.button('Hitung')
      
     if tombol:
         jumlah=a*b*c*e/d*100
-        st.success(f'Kadar (b/b) sampel adalah= {jumlah}%') 
+        st.success(f'Kadar %(b/b) sampel= {jumlah}%') 
 
 
 
