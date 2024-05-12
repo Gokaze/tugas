@@ -31,18 +31,18 @@ with tab2:
 
 with tab3:
     st.header('kalkulator menghitung kadar %(b/b) dalam sampel')
-    y=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
-    x=st.number_input('Masukkan konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
-    z=st.number_input('Masukkan nilai BE sample :')
-    w=st.number_input('masukkan bobot sampel (mg) :')
-    r=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
+    a=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
+    b=st.number_input('Masukkan konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
+    c=st.number_input('Masukkan nilai BE sample :')
+    d=st.number_input('masukkan bobot sampel (mg) :')
+    e=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
 
 
     tombol = st.button('Hitung')
      
     if tombol:
-        jumlahkadar=y*x*z*r/w*0.1
+        jumlahkadar=a*b*c*e/d*0.1
         st.success(f'Kadar (b/b) sampel adalah= {jumlahkadar}%') 
 
 
