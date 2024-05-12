@@ -27,7 +27,7 @@ with tab2:
      
     if tombol:
         jumlahkadar=y*x*z*r/w*0.1
-        st.success(f'Kadar (b/v) sampel adalah{jumlahkadar}%') 
+        st.success(f'Kadar (b/v) sampel adalah= {jumlahkadar}%') 
 
 
 
