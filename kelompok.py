@@ -31,11 +31,11 @@ with tab2:
 
 with tab3:
     st.header('kalkulator menghitung kadar %(b/b) dalam sampel')
-    a=st.number_input('Masukkan volume dari titran yang digunakan selama titrasi :')
-    b=st.number_input('Masukkan konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
-    c=st.number_input('Masukkan nilai BE sample :')
+    a=st.number_input('volume titran yang digunakan selama titrasi :')
+    b=st.number_input('konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
+    c=st.number_input('nilai BE sample :')
     d=st.number_input('masukkan bobot sampel (mg) :')
-    e=st.number_input('masukkan faktor pengali/pengenceran yang digunakan :',min_value=1)
+    e=st.number_input('faktor pengali/pengenceran yang digunakan :',min_value=1)
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
 
 
