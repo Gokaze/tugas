@@ -23,11 +23,11 @@ with tab2:
 
 
 
-    tombol = st.button('Hitung jumlah molaritas')
+    tombol = st.button('Hitung')
      
     if tombol:
-        jumlahmolaritas=y*x*z*r/w*0.1
-        st.success(f'Kadar (b/v) sampel adalah{jumlahmolaritas} %') 
+        jumlahkadar=y*x*z*r/w*0.1
+        st.success(f'Kadar (b/v) sampel adalah{jumlahkadar}%') 
 
 
 
