@@ -269,7 +269,7 @@ with tab3:
         st.success(f'Kadar %(b/v) sampel= {jumlahkadar}%') 
 
 with tab4:
-    st.header('kalkulator Perhitungan Kadar %(b/b) Dalam Sampel')
+    st.header('Kalkulator Perhitungan Kadar %(b/b) Dalam Sampel')
     a=st.number_input('volume titran yang digunakan untuk titrasi :')
     b=st.number_input('konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
     c=st.number_input('nilai BE sampel :')
