@@ -39,7 +39,7 @@ with tab3:
     st.write('Bila tidak ada fp masukkan nilai fp sebagai:1')
 
 
-    tombol = st.button('Hitung')
+    tombol = st.button('Hitung kadar %(b/b)')
      
     if tombol:
         jumlahkadar=a*b*c*e/d*0.1
