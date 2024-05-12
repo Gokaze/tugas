@@ -5,7 +5,7 @@ st.title('Substance Analyzer')
 tab1, tab2, tab3, tab4=st.tabs(['Penjelasan','Mencari Nilai Ar Suatu Unsur','Kalkulator Perhitungan Kadar %(b/v)','Kalkulator Perhitungan Kadar %(b/b)'])
 
 with tab1:
-    st.header('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
+    st.write('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
     st.write('Konsentrasi dalam % (b/b) didefinisikan sebagai gram zat terlarut dalam 100 g larutan atau milligram zat terlarut dalam 100 mg larutan.')
 
 with tab2:
