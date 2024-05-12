@@ -281,7 +281,7 @@ with tab4:
     tombol = st.button('Hitung kadar %(b/b)')
      
     if tombol:
-        jumlah=a*b*c*e/d*0.1
+        jumlah=a*b*c*e/d
         st.success(f'Kadar (b/b) sampel adalah= {jumlah}%') 
 
 
