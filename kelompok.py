@@ -278,7 +278,7 @@ with tab4:
     st.write('Bila tidak ada faktor pengali/pengenceran masukkan nilai=1')
 
 
-    tombol = st.button('Hitung')
+    tombol =st.button('Hitung kadar')
      
     if tombol:
         jumlah=a*b*c*e/d*100
