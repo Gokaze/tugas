@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Substanse Analyzer')
+st.title('Substance Analyzer')
 
 tab1, tab2, tab3, tab4=st.tabs(['Penjelasan','Mencari Nilai Ar Suatu Unsur','Kalkulator Perhitungan Kadar %(b/v)','Kalkulator Perhitungan Kadar %(b/b)'])
 
