@@ -2,14 +2,14 @@ import streamlit as st
 
 st.title('Menghitung Jumlah kadar ')
 
-tab1, tab2, tab3, tab4=st.tabs(['informasi tentang kadar','Mencari nilai Ar suatu atom','kalkulator menghitung kadar %(b/V)','kalkulator menghitung kadar %(b/B)'])
+tab1, tab2, tab3, tab4=st.tabs(['informasi tentang kadar','Mencari nilai Ar suatu atom','kalkulator menghitung kadar %(b/v)','kalkulator menghitung kadar %(b/b)'])
 
 with tab1:
     st.header('')
     st.write('')
 
 with tab2:
-    st.header('Mengetahui nilai Ar dari suatu atom')
+    st.header('Mencari nilai Ar dari suatu unsur')
     atom=st.text_input('masukan simbol atom (cth: Pb)')
     tombol=st.button('tampilkan nilai Ar')
 
