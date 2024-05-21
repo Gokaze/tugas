@@ -3,7 +3,7 @@ import streamlit as st
 st.title('Substance Analyzer')
 
 add_selectbox = st.sidebar.selectbox(
-    "Substance Analyzer",("home","tentang aplikasi","Menegtahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
+    "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
 
 if add_selectbox=="home":
     st.write('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
