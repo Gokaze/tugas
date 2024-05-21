@@ -6,8 +6,7 @@ add_selectbox = st.sidebar.selectbox(
     "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
 
 if add_selectbox=="home":
-    st.write('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
-    st.write('Konsentrasi dalam % (b/b) didefinisikan sebagai gram zat terlarut dalam 100 g larutan atau milligram zat terlarut dalam 100 mg larutan.')
+    st.markdown("<h1 style='text-align: center; font-weight: bold;'>Welcome to ChemCals!</h1>", unsafe_allow_html=True)
 
 elif add_selectbox=="Mengetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
