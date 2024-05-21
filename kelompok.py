@@ -9,7 +9,7 @@ if add_selectbox=="home":
     st.write('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
     st.write('Konsentrasi dalam % (b/b) didefinisikan sebagai gram zat terlarut dalam 100 g larutan atau milligram zat terlarut dalam 100 mg larutan.')
 
-elif add_selectbox=="Menegetahui nilai massa atom relatif suatu unsur":
+elif add_selectbox=="Mengetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
     atom=st.text_input('Masukkan Simbol Unsur (cth: Pb)')
     tombol=st.button('Tampilkan Nilai Ar')
