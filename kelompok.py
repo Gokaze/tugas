@@ -1,12 +1,12 @@
 import streamlit as st
 
-st.title('Substance Analyzer')
+
 
 add_selectbox = st.sidebar.selectbox(
     "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
 
 if add_selectbox=="home":
-    st.markdown("<h1 style='text-align: center; font-weight: bold;'>Welcome to ChemCals!</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-weight: bold;'>Welcome to substance analyzer</h1>", unsafe_allow_html=True)
 
 elif add_selectbox=="Mengetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
