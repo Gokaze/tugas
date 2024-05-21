@@ -2,13 +2,14 @@ import streamlit as st
 
 st.title('Substance Analyzer')
 
-tab1, tab2, tab3, tab4=st.tabs(['Penjelasan','Mencari Nilai Ar Suatu Unsur','Kalkulator Perhitungan Kadar %(b/v)','Kalkulator Perhitungan Kadar %(b/b)'])
+add_selectbox = st.sidebar.selectbox(
+    "Substance Analyzer",("home","tentang aplikasi","Menegtahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
 
-with tab1:
+if add_selectbox=="home":
     st.write('Konsentrasi dalam % (b/v) didefinisikan sebagai gram zat terlarut dalam 100 mL larutan.')
     st.write('Konsentrasi dalam % (b/b) didefinisikan sebagai gram zat terlarut dalam 100 g larutan atau milligram zat terlarut dalam 100 mg larutan.')
 
-with tab2:
+elif add_selectbox=="Menegetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
     atom=st.text_input('Masukkan Simbol Unsur (cth: Pb)')
     tombol=st.button('Tampilkan Nilai Ar')
@@ -248,7 +249,7 @@ with tab2:
 
 
     
-with tab3:
+elif add_selectbox=="perhitungan kadar (b/v)":
     st.header('Kalkulator Perhitungan Kadar %(b/v) Dalam Sampel')
     y=st.number_input('Masukkan volume titran yang digunakan untuk titrasi :',value=0.0000)
     x=st.number_input('Masukkan konsentrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
@@ -268,7 +269,7 @@ with tab3:
         jumlahkadar=y*x*z*r/w*0.1
         st.success(f'Kadar %(b/v) sampel= {jumlahkadar}%') 
 
-with tab4:
+elif add_selectbox=="perhitungan kadar(b/b)":
     st.header('Kalkulator Perhitungan Kadar %(b/b) Dalam Sampel')
     a=st.number_input('volume titran yang digunakan untuk titrasi :')
     b=st.number_input('konsenstrasi titran yang digunakan :', min_value=0.0000,format='%.4f')    
