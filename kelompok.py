@@ -2,7 +2,8 @@ import streamlit as st
 st.set_page_config(page_title="Substance Analyzer")
 
 
-
+st.image("IMG_9194.jpg"
+         width=100)
 add_selectbox = st.sidebar.selectbox(
     "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
 
