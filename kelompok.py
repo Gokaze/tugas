@@ -284,7 +284,7 @@ elif add_selectbox=="perhitungan kadar(b/b)":
      
     if tombol:
         jumlah=a*b*c*e/d*100
-        st.success(f'Kadar %(b/b) sampel= {jumlah}%') 
+        st.success(f'Kadar %(b/b) sampel= {jumlah:.2f}%') 
 
 
 
