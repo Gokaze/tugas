@@ -9,7 +9,7 @@ add_selectbox = st.sidebar.selectbox(
 if add_selectbox=="home":
     st.markdown("<h1 style='text-align: center; font-weight: bold;'>Welcome to substance analyzer</h1>", unsafe_allow_html=True)
     st.image("LPK.png",caption=("Selamat datang di web kami"))
-    st.markdown("<h1 style= 'image align: center'>LPK.png</h1>",unsafe_allow_html=true)
+    st.markdown("<h1 style= 'image align: center'>LPK.gif</h1>",unsafe_allow_html=true)
 elif add_selectbox=="Mengetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
     atom=st.text_input('Masukkan Simbol Unsur (cth: Pb)')
