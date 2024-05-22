@@ -268,7 +268,7 @@ elif add_selectbox=="perhitungan kadar (b/v)":
      
     if tombol:
         jumlahkadar=y*x*z*r/w*0.1
-        st.success(f'Kadar %(b/v) sampel= {jumlahkadar}%') 
+        st.success(f'Kadar %(b/v) sampel= {jumlahkadar:.2f}%') 
 
 elif add_selectbox=="perhitungan kadar(b/b)":
     st.header('Kalkulator Perhitungan Kadar %(b/b) Dalam Sampel')
