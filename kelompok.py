@@ -4,12 +4,12 @@ st.set_page_config(page_title="Substance Analyzer")
 
 
 add_selectbox = st.sidebar.selectbox(
-    "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","perhitungan kadar(b/b)","tentang kami","referensi"))
+    "Substance Analyzer",("home","tentang aplikasi","Mengetahui nilai massa atom relatif suatu unsur","perhitungan kadar (b/v)","Contoh Soal %b/v","perhitungan kadar(b/b)","Contoh Soal %b/b","tentang kami","referensi"))
 
 if add_selectbox=="home":
     st.markdown("<h1 style='text-align: center; font-weight: bold;'>Welcome to substance analyzer</h1>", unsafe_allow_html=True)
     st.image("LPK.png",caption=("Selamat datang di web kami"))
-    st.markdown("<h1 style= 'image align: center'>LPK.gif</h1>",unsafe_allow_html=true)
+
 elif add_selectbox=="Mengetahui nilai massa atom relatif suatu unsur":
     st.header('Mencari Nilai Ar Suatu Unsur')
     atom=st.text_input('Masukkan Simbol Unsur (cth: Pb)')
@@ -286,5 +286,47 @@ elif add_selectbox=="perhitungan kadar(b/b)":
         jumlah=a*b*c*e/d*100
         st.success(f'Kadar %(b/b) sampel= {jumlah:.2f}%') 
 
+elif add_selectbox=="tentang aplikasi":
+    st.write("""Deskripsi:
+    Aplikasi ini digunakan untuk kepentingan di bidang kimia, 
+    yangdirancang agar dapat memberikan informasi terkait nilai massa atom relatif (Ar) berbagai unsur kimia
+    untuk selanjutnya dikaitkan dengan kalkulator perhitungan konsentrasi analit dalam suatu sampel atau bahan.
+    Dalam ilmu kimia, untuk menyatakan konsentrasi salah satunya sering menggunakan istilah persen. 
+     Persen dalam konsentrasi larutan dapat dinyatakan menjadi tiga bentuk, yaitu %b/b, %b/v, dan %v/v.""")
 
+elif add_selectbox=="tentang kami":
+    st.write("""🫧KELOMPOK 8
+    Program Studi Analisis Kimia
+    Politeknik AKA Bogor🫧
 
+    1. Alya Maisti (2360066)
+    2. ⁠Razky Riandika Riadi (2360234)
+    3. ⁠Risya Nuraliya Mikdar(2360243)
+    4. ⁠Roro Aniszki Rahmawati (2360248)
+    5. ⁠Tajmiilareda (2360274)
+
+    Contact person: 
+    +62 812-2565-9835 (Razky Riandika Riadi)""")
+
+elif add_selectbox=="Contoh Soal %b/v":
+    st.write("""Suatu contoh tembaga oksida sebanyak 30 mL dilarutkan dalam asam, 
+    pH diatur dan ditambahkan KI berlebih untuk membebaskan I2.
+    I2 dititrasi dengan 29,68 mL Natrium Tiosulfat 0,1058 N .
+    Hitunglah persentase CuO dalam contoh!""")
+
+elif add_selectbox=="Contoh Soal %b/b":
+    st.write("""Sampel yang mengandung Cl sebanyak 10 g dilarutkan ke dalam labu takar 100 mL. 
+    Dari larutan tersebut dipipet sebanyak 25 mL dan dimasukkan ke dalam erlenmeyer kemudian ditambahkan larutan K2CrO4 sebagai indikator.
+    Larutan dititar dengan larutan AgNO3 0,1025 N hingga titik akhir tercapai pada penambahan volume 17,35 mL. 
+    Hitung kadar Cl dalam contoh!""")
+
+ elif add_selectbox=="referensi":
+    st.write("""Daftar Pustaka:
+    AGUSTINO, R. 2019. Komparasi Algoritma Klasifikasi dengan Menggunakan Anaconda untuk Memprediksi Ramai Penonton Film di Bioskop. Jurnal Teknologi Informatika dan Komputer. 5(1):24-28. 
+        https://scholar.google.com/scholar?hl=id&as_sdt=0%2C5&q=jurnal +anaconda&btnG=#d=gs_qabs&t=1715413977128&u=%23p%3D1deHfbc0RLcJ [12 Maret 2024]
+    ARIWANTA, I. P. Y. A., K. Y. E. ARYANTO, I. G. A. GUNADI. 2024. Suricata accuracy optimization based on live analysis using one-class support vector machine method and streamlit framework. 
+        Jurnal Teknik Informatika. 5(2):415-427. https://scholar.google.com/scholar?hl=id&as_sdt=0%2C5&q=jurnal+streamlit&btnG=#d=gs_qabs&t=1715413773823&u=%23p%3DnPlRzw5Ev2QJ [9 Mei 2024]
+    MEDURI, N. R. H., R. FIRDAUS, H. FITRIAWAN. 2022. Efektifitas Aplikasi Website dalam Pembelajaran Untuk Meningkatkan Minat Belajar Peserta Didik. Jurnal Teknologi Pendidikan. 11(2):283-294. 
+        https://uia.e-journal.id/akademika/article/download/2272/1258 [4 Mei 2024]
+    ROMZI, M., B. KURNIAWAN. 2020. Pembelajaran Pemrograman Python dengan Pendekatan Logika Algoritma. Jurnal Teknik Informatika Mahakarya. 3(2):37-44. 
+        https://scholar.google.com/scholar?q=junal+python&hl=id&as_sdt=0#d=gs_qabs&t=1715413359921&u=%23p%3D16mRp8bognoJ [16 April 2024]""")
